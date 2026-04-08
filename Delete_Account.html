@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - Elbsociety</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #F7F9FC;
+            color: #111827;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 40px 32px;
+            background-color: #FFFFFF;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            box-sizing: border-box;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .logo-placeholder {
+            width: 64px;
+            height: 64px;
+            background-color: #2B48A1;
+            border-radius: 16px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            margin: 0 auto 16px auto;
+        }
+
+        h1 {
+            color: #111827;
+            font-size: 24px;
+            margin: 0 0 8px 0;
+        }
+
+        p {
+            color: #4B5563;
+            margin-top: 0;
+            font-size: 15px;
+        }
+
+        h2 {
+            color: #2B48A1;
+            font-size: 18px;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #E5E7EB;
+            padding-bottom: 8px;
+        }
+
+        .method-card {
+            background-color: #F9FAFB;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border-left: 4px solid #2B48A1;
+            border-top: 1px solid #E5E7EB;
+            border-right: 1px solid #E5E7EB;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .method-card.warning {
+            border-left-color: #EF4444;
+        }
+
+        ol, ul {
+            color: #4B5563;
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        li::marker {
+            color: #2B48A1;
+            font-weight: bold;
+        }
+
+        strong {
+            color: #111827;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2B48A1;
+            color: #FFFFFF;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 16px;
+            text-align: center;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-danger {
+            background-color: #EF4444;
+        }
+
+        .data-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .data-item {
+            background-color: #F9FAFB;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #4B5563;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid #E5E7EB;
+        }
+
+        @media (max-width: 480px) {
+            .data-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo-placeholder">E</div>
+            <h1>Delete Your Account</h1>
+            <p>Manage your Elbsociety data and privacy</p>
+        </div>
+
+        <div class="method-card">
+            <h2 style="margin-top: 0; border: none; padding: 0;">Method 1: Delete within the App (Fastest)</h2>
+            <p>If you still have access to the Elbsociety app, you can delete your account instantly and automatically:</p>
+            <ol>
+                <li>Open the <strong>Elbsociety</strong> app and log in.</li>
+                <li>Navigate to the <strong>Settings</strong> screen (via your Profile).</li>
+                <li>Scroll to the bottom and tap <strong>"Account löschen"</strong> (Delete Account).</li>
+                <li>Enter your current password to confirm your identity.</li>
+                <li>Tap <strong>"Löschen"</strong> to permanently erase your account.</li>
+            </ol>
+            <p style="margin-top: 16px; margin-bottom: 0; font-size: 13px; color: #059669;">
+                ✓ This method deletes your data immediately.
+            </p>
+        </div>
+
+        <div class="method-card warning">
+            <h2 style="margin-top: 0; border: none; padding: 0;">Method 2: Request via Email</h2>
+            <p>If you no longer have the app or cannot log in, you can request a manual deletion:</p>
+            <ol>
+                <li>Send an email from the <strong>exact email address</strong> you used to sign up.</li>
+                <li>Send the request to: <strong>hinxlage.solutions@gmail.com</strong></li>
+                <li>Use the subject line: <strong>"Delete My Account"</strong></li>
+            </ol>
+            <a href="mailto:hinxlage.solutions@gmail.com?subject=Delete%20My%20Account" class="btn btn-danger">
+                Send Deletion Request
+            </a>
+            <p style="margin-top: 16px; margin-bottom: 0; font-size: 13px;">
+                <strong>Important:</strong> For security reasons, we can only process manual requests sent from the verified email address associated with your account. Processing may take up to 30 days.
+            </p>
+        </div>
+
+        <h2>What gets deleted?</h2>
+        <p>When your account is deleted (either via the app or email request), all associated data is permanently wiped from our servers. This includes:</p>
+        
+        <div class="data-list">
+            <div class="data-item">👤 Profile & Credentials</div>
+            <div class="data-item">💬 Messages & Chat History</div>
+            <div class="data-item">📍 Location Data & Geohashes</div>
+            <div class="data-item">🖼️ Uploaded Images</div>
+            <div class="data-item">📅 Hosted Events</div>
+            <div class="data-item">✅ Event Attendances</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
